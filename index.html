@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FruitCart - Fresh Fruit Marketplace</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="logo">🍉 FruitCart</div>
+        <ul class="nav-links">
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#cart">Cart</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content container">
+        <div>
+          <h1>Fresh Fruits Delivered to Your Doorstep</h1>
+          <p>
+            Discover hand-picked seasonal fruits from trusted farms. Build your
+            basket and enjoy healthy, delicious produce every day.
+          </p>
+          <a class="cta" href="#shop">Shop Fruits</a>
+        </div>
+        <div class="hero-card" aria-label="Weekly offer">
+          <h2>Weekly Box</h2>
+          <p>Get 20% off curated fruit bundles this week.</p>
+          <span class="price">$24.99</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="shop" class="container section">
+        <div class="section-title">
+          <h2>Popular Fruits</h2>
+          <p>Choose from our best-selling fresh picks.</p>
+        </div>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="benefits" class="benefits section">
+        <div class="container benefit-grid">
+          <article>
+            <h3>Farm Fresh</h3>
+            <p>Directly sourced from local farms for peak flavor and nutrition.</p>
+          </article>
+          <article>
+            <h3>Fast Delivery</h3>
+            <p>Same-day delivery in selected cities and next-day everywhere else.</p>
+          </article>
+          <article>
+            <h3>Easy Returns</h3>
+            <p>If you're not happy, we'll replace your order free of charge.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cart" class="container section">
+        <div class="section-title">
+          <h2>Your Cart</h2>
+          <p>Review your selected fruits.</p>
+        </div>
+        <div class="cart">
+          <ul id="cart-items" class="cart-items"></ul>
+          <div class="cart-summary">
+            <p>Total Items: <strong id="item-count">0</strong></p>
+            <p>Total Price: <strong id="total-price">$0.00</strong></p>
+            <button id="checkout-btn" class="checkout-btn" type="button">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> FruitCart. Eat fresh, feel great.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
